@@ -21,3 +21,10 @@ def inserir_dados_bd(value_atual):
     except Exception as error:
         raise error
 
+
+if __name__ == "__main__":
+    try:
+        inserir_dados_bd(32956)
+        print("inserção bem sucedida")
+    except Exception as error:
+        print(f"falha ao comunicar com o banco de dados: {error}")
