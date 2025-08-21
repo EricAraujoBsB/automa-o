@@ -3,6 +3,9 @@ import time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
+from data.operacoes import inserir_dados_bd
+
+
 navegador = webdriver.Chrome()
 
 navegador.get("https://10.2.140.101/admin/login.jsp")
